@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { EventModule } from './event/event.module';
+import { FormioResources } from 'angular-formio/resource';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { EventModule } from './event/event.module';
     FormioAuthService,
     {provide: FormioAuthConfig,useValue: AuthConfig},
     {provide: FormioAppConfig,useValue: AppConfig},
+    FormioResources,
 
   ],
   bootstrap: [AppComponent]
