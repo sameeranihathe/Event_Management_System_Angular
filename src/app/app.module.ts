@@ -10,7 +10,7 @@ import { AuthModule } from './auth/auth.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
-
+import { EventModule } from './event/event.module';
 
 @NgModule({
   declarations: [
@@ -33,6 +33,10 @@ import { HeaderComponent } from './header/header.component';
       {
         path: 'auth',
         loadChildren: () =>AuthModule
+      },
+      {
+        path: 'event',
+        loadChildren: () => EventModule
       }
     ])
 
